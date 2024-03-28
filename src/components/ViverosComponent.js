@@ -6,7 +6,7 @@ class AboutText extends Component {
     return (
       <div>
         {/*====================  about text area ====================*/}
-        <div className="about-text-area  section-space--inner--120">
+        <div className="about-text-area  section-space--inner--120 animate__animated animate__fadeInDown">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6">

@@ -155,7 +155,7 @@ class NavBar extends Component {
                                 ECOSISTEMAS
                               </Link>
                             </li>
-                            <li className="has-children has-children--multilevel-submenu">
+                            <li className=" has-children--multilevel-submenu">
                               <Link
                                 to={`${process.env.PUBLIC_URL}/proyectos`}
                                 onClick={() => window.scrollTo(0, 0)}
@@ -187,32 +187,34 @@ class NavBar extends Component {
                               </ul> */}
                             </li>
                             <li className="has-children has-children--multilevel-submenu">
-                              <Link to={`${process.env.PUBLIC_URL}/galeria`}
-                              onClick={() => window.scrollTo(0, 0) }
+                              <Link
+                                to={`${process.env.PUBLIC_URL}/galeria`}
+                                onClick={() => window.scrollTo(0, 0)}
                               >
                                 GALERIA
                               </Link>
-                              {/* <ul className="submenu">
+                              <ul className="submenu">
                                 <li>
                                   <Link
-                                    to={`${process.env.PUBLIC_URL}/projects`}
+                                    to={`${process.env.PUBLIC_URL}/eco_galery`}
                                   >
-                                    Project Page
+                                    Ecosistemas
                                   </Link>
                                 </li>
                                 <li>
                                   <Link
-                                    to={`${process.env.PUBLIC_URL}/project-details`}
+                                    to={`${process.env.PUBLIC_URL}/pro-galery`}
                                   >
-                                    Project Details
+                                    Proyectos
                                   </Link>
                                 </li>
-                              </ul> */}
+                              </ul>
                             </li>
 
                             <li>
-                              <Link to={`${process.env.PUBLIC_URL}/contact-us`}
-                              onClick={() => window.scrollTo(0, 0) }
+                              <Link
+                                to={`${process.env.PUBLIC_URL}/contact-us`}
+                                onClick={() => window.scrollTo(0, 0)}
                               >
                                 CONTACTO
                               </Link>{" "}
