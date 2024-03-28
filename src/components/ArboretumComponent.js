@@ -84,7 +84,7 @@ class ArboretumComponent extends Component {
     });
 
     return (
-      <div>
+      <div id="changePosition">
         {/*====================  service tab area ====================*/}
         <div className="service-tab-area section-space--inner--120 animate__animated animate__fadeInDown">
           <div className="container">
