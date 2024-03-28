@@ -1,0 +1,238 @@
+/*=============================================
+=            feature icon            =
+=============================================*/
+
+.feature-icon-wrapper {
+  margin-bottom: -30px;
+}
+
+.single-feature-icon {
+  margin-bottom: 30px;
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.3;
+    color: #393939;
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    color: #5a5a5a;
+    font-family: $poppins;
+  }
+}
+
+/*=====  End of feature icon  ======*/
+.containerEcosistema {
+  background-color: #009492;
+  height: 300px;
+  padding: 3rem;
+  color: white;
+  margin-top: -5rem;
+}
+
+.containerobjetEcosistemas {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .containerobjetEcosistemas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .containerEcosistema {
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    align-items: left;
+    align-content: left;
+    height: 410px;
+    padding: 1rem;
+  }
+}
+
+.car-ecositemas {
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem;
+}
+.iconos-car {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.p-color {
+  color: rgba(243, 239, 239, 0.922) !important;
+}
+
+.arboretum_styled {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 150px;
+  background-color: #ffd42a;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.arboretum_styled:hover {
+  background-color: #cbaa26;
+}
+
+.arbolesVivos_styled {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 150px;
+  background-color: #009492;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: white;
+  border: none;
+}
+
+.arbolesVivos_styled:hover {
+  background-color: #027775;
+}
+
+.viveros_styled {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 150px;
+  background-color: #274955;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: white;
+  border: none;
+}
+
+.viveros_styled:hover {
+  background-color: #1f3b46;
+}
+.car_fauna {
+  display: flex;
+  gap: 2rem;
+}
+
+.section_space_flora_fauna {
+  margin-bottom: 10rem;
+}
+
+// section feacture icon proyectos
+
+.containerIconProyect {
+  background-color: #6fb530;
+  height: 340px;
+  padding: 3rem;
+  color: white;
+  margin-top: -5rem;
+}
+
+.containerobjetEcosistemas {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .containerobjetEcosistemas {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .containerIconProyect {
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    align-items: left;
+    align-content: left;
+    height: 620px;
+    padding: 1rem;
+  }
+}
+
+.car-ecositemas {
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem;
+}
+.iconos-car {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.p-color {
+  color: rgba(243, 239, 239, 0.922) !important;
+}
+
+.a_flora {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 150px;
+  background-color: #6fb530;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.a_flora:hover {
+  background-color: #4f8321;
+}
+
+.a_fauna {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 150px;
+  background-color: #ffdd55;
+  padding: 0.5rem;
+  border-radius: 20px;
+  color: #009492;
+  border: none;
+}
+
+.a_fauna:hover {
+  background-color: #c5ac46;
+}
+.car_fauna {
+  display: flex;
+  gap: 2rem;
+}
+
+.section_space_flora_fauna {
+  margin-bottom: 10rem;
+}
+
+// section ecosistemas
