@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import imgBannerFauna from "../assets/img/imgBig/imgBannerFauna.png";
-import imgAvesTab from "../assets/img/imgBig/imgAvesTab.jpeg";
-import imgAnfibiosTab from "../assets/img/imgBig/imgAnfibiosfauna.jpeg";
-import imgReptilesTab from "../assets/img/imgBig/imgReptilesFauna.jpeg";
+import imgBannerFauna from "../assets/img/imgBig/imgBannerFauna.jpg";
+import imgAvesTab from "../assets/img/imgBig/imgAvesTab.jpg";
+import imgAnfibiosTab from "../assets/img/imgBig/imgAnfibiosfauna.jpg";
+import imgReptilesTab from "../assets/img/imgBig/imgReptilesFauna.jpg";
 
 class FaunaComponent extends Component {
   render() {

@@ -3,10 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Modal3 from "./modal/Modal3";
 import Modal4 from "./modal/Modal4";
 import Modal5 from "./modal/Modal5";
-import imgBannerFlora from "../assets/img/imgBig/imgBanner_Flora.png"
-import imagenVsecundaria from "../assets/img/imgBig/imageArbol.jpeg";
-import imagenVbaja from "../assets/img/imgBig/vegetacionBaja.jpeg";
-import imgpastosEnmalezados from "../assets/img/imgBig/pastosEnmalezados.jpeg";
+import imgBannerFlora from "../assets/img/imgBig/imgBanner_Flora.jpg"
+import imagenVsecundaria from "../assets/img/imgBig/imageArbol.jpg";
+import imagenVbaja from "../assets/img/imgBig/vegetacionBaja.jpg";
+import imgpastosEnmalezados from "../assets/img/imgBig/pastosEnmalezados.jpg";
 
 class FloraComponent extends Component {
   render() {

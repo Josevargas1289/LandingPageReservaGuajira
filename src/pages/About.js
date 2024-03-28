@@ -7,7 +7,7 @@ import FeatureIcon from "../components/FeatureIcon";
 // import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/imgEcosistemas.jpeg";
+import backgroundImage from "../assets/img/imgBig/imgEcosistemas.jpg";
 import AboutProyect from "../components/AbaoutProyect";
 import FloraComponent from "../components/FloraComponent";
 import FaunaComponent from "../components/FaunaComponent ";

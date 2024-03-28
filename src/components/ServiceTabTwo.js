@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import arboretumImgTabHome from "../assets/img/imgBig/arboretumtabhome.jpeg";
-import arbolesImgTabHome from "../assets/img/imgBig/arbolesplustabhome.jpeg";
-import viverosimgTabHome from "../assets/img/imgBig/viverotabhome.jpeg";
+import arboretumImgTabHome from "../assets/img/imgBig/arboretumtabhome.jpg";
+import arbolesImgTabHome from "../assets/img/imgBig/arbolesplustabhome.jpg";
+import viverosimgTabHome from "../assets/img/imgBig/viverotabhome.jpg";
 
 class ServiceTabTwo extends Component {
   render() {

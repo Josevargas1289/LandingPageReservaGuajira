@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import img1Tab from "../assets/img/imgBig/img1tabproyecto.jpg";
-import img2Tab from "../assets/img/imgBig/img2tabproyecto.jpeg";
-import img3Tab from "../assets/img/imgBig/img3tabproyecto.jpg";
-import img4Tab from "../assets/img/imgBig/img4proyecto.jpg";
-import img5Tab from "../assets/img/imgBig/img5proyecto.jpeg";
+import img1Tab from "../assets/img/imgBig/img1Proyecto.jpg";
+import img2Tab from "../assets/img/imgBig/img2Proyecto.jpg";
+import img3Tab from "../assets/img/imgBig/img3Proyecto.jpg";
+import img4Tab from "../assets/img/imgBig/img4Proyecto.jpg";
+import img5Tab from "../assets/img/imgBig/img5Proyecto.jpg";
 
 
 

@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import ProjectComponentOne from "../components/ProjectoComponenteOne";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/bannerProyectos.jpeg";
+import backgroundImage from "../assets/img/imgBig/bannerProyectos.jpg";
 import FeatureIconProject from "../components/feactureIconProject";
 import ArboretumComponent from "../components/ArboretumComponent";
 import ArbolesComponent from "../components/ArbolesComponent";

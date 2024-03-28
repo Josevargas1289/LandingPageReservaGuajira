@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import imagen from "../assets/img/imgBig/imageArbol.jpeg";
+import imagen from "../assets/img/imgBig/imageArbol.jpg";
 import Modal2 from "./modal/Modal2";
 
 class Funfact extends Component {

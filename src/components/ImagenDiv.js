@@ -1,5 +1,5 @@
 import React from "react";
-import imgArbol from "../assets/img/imgBig/arboretum1.png";
+import imgArbol from "../assets/img/imgBig/arboretum1.jpg";
 
 const ImagenDiv = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import imgecosistemassection from "../assets/img/imgBig/ecosistemasSection.jpeg";
+import imgecosistemassection from "../assets/img/imgBig/ecosistemasSection.png";
 
 class AboutProyect extends Component {
   constructor() {
