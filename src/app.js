@@ -5,6 +5,10 @@ import Spinner from "./components/Spinner";
 const HomeThree = lazy(() => import("./home/HomeThree"));
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
+const GaleryEcosistemas = lazy(() => import("./pages/GaleryEcosistemas"));
+const GaleryProjects = lazy(() => import("./pages/GaleryProjects"));
+
+
 // const ServiceDetailsLeftSidebar = lazy(() =>
 //   import("./service/ServiceDetailsLeftSidebar")
 // );
@@ -41,7 +45,9 @@ const App = () => {
             element={<ServiceDetailsRightSidebar />}
           /> */}
           <Route path="/galeria" element={<Projects />} />
-          {/* <Route path="/project-details" element={<ProjectDetails />} /> */}
+          <Route path="/eco_galery" element={<GaleryEcosistemas/>} />
+          <Route path="/pro-galery" element={<GaleryProjects/>} />
+
           {/* <Route path="/blog-left-sidebar" element={<BlogLeftSidebar />} />
           <Route path="/blog-right-sidebar" element={<BlogRightSidebar />} />
           <Route

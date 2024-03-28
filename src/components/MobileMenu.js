@@ -66,21 +66,23 @@ class MobileMenu extends Component {
               <nav className="offcanvas-navigation" id="offcanvas-navigation">
                 <ul>
                   <li className="menu-item-has-children">
-                    <Link to={`/`}
-                    onClick={() => window.scrollTo(0, 0) }
-                    >INICIO</Link>
+                    <Link to={`/`} onClick={() => window.scrollTo(0, 0)}>
+                      INICIO
+                    </Link>
                   </li>
                   <li>
-                    <Link 
-                    onClick={() => window.scrollTo(0, 0) }
-                    to={`${process.env.PUBLIC_URL}/ecosistemas`}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      to={`${process.env.PUBLIC_URL}/ecosistemas`}
+                    >
                       ECOSISTEMAS
                     </Link>
                   </li>
                   <li className="menu-item-has-children">
-                    <Link 
-                    onClick={() => window.scrollTo(0, 0) }
-                    to={`${process.env.PUBLIC_URL}/proyectos`}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      to={`${process.env.PUBLIC_URL}/proyectos`}
+                    >
                       PROYECTOS
                     </Link>
                     {/* <ul className="sub-menu">
@@ -106,29 +108,31 @@ class MobileMenu extends Component {
                     </ul> */}
                   </li>
                   <li className="menu-item-has-children">
-                    <Link 
-                    onClick={() => window.scrollTo(0, 0) }
-                    to={`${process.env.PUBLIC_URL}/galeria`}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      to={`${process.env.PUBLIC_URL}/galeria`}
+                    >
                       GALERIA
                     </Link>
-                    {/* <ul className="sub-menu">
+                    <ul className="sub-menu">
                       <li>
-                        <Link to={`${process.env.PUBLIC_URL}/projects`}>
-                          Project Page
+                        <Link to={`${process.env.PUBLIC_URL}/eco_galery`}>
+                          Ecosistemas
                         </Link>
                       </li>
                       <li>
-                        <Link to={`${process.env.PUBLIC_URL}/project-details`}>
-                          Project Details
+                        <Link to={`${process.env.PUBLIC_URL}/pro-galery`}>
+                          Poyectos
                         </Link>
                       </li>
-                    </ul> */}
+                    </ul>
                   </li>
 
                   <li>
-                    <Link 
-                    onClick={() => window.scrollTo(0, 0) }
-                    to={`${process.env.PUBLIC_URL}/contact-us`}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      to={`${process.env.PUBLIC_URL}/contact-us`}
+                    >
                       CONTACTO
                     </Link>{" "}
                   </li>
