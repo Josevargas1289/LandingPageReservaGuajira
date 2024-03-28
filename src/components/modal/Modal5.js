@@ -5,8 +5,8 @@ const Modal5 = () => {
   return (
     <div>
       <button
-        className="ht-btn ht-btn--round"
-        style={{ background: "#0A9D33", border: "none" }}
+        className="ht-btn ht-btn--round modalBtn"
+        
         onClick={() => setModal2Open(true)}
       >
         LEER MÁS
