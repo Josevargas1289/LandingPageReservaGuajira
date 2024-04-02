@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-import FeatureIcon from "../components/FeatureIcon";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import backgroundImage from "../assets/img/imgBig/Img_galery_slider.jpg";
-import AboutProyect from "../components/AbaoutProyect";
+import GalerySectionOne from "../components/GalerySectionOne";
+import FeatureIcongalery from "../components/FectureIconGalery";
 
 class Galery extends Component {
   constructor() {
@@ -49,12 +49,12 @@ class Galery extends Component {
         <div className="page-wrapper   ">
           {/* About section */}
           <div className="about-section ">
-            <AboutProyect />
+            <GalerySectionOne />
           </div>
           {/* end about section */}
 
           {/* Feature Icon */}
-          <FeatureIcon />
+          <FeatureIcongalery />
 
           {/* Renderizar FloraComponent o FaunaComponent según el estado */}
         </div>

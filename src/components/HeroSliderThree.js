@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import SwiperSlider, { SwiperSlide } from "./swiper";
 import { EffectFade } from "swiper";
 import slider5 from "../assets/img/slider/slider5.jpg";
+import slider6 from "../assets/img/slider/slider6.jpg";
+import slider7 from "../assets/img/slider/slider7.jpg";
 
 class HeroSliderThree extends Component {
   render() {
@@ -20,6 +22,14 @@ class HeroSliderThree extends Component {
     let data = [
       {
         bgImg: slider5,
+        sliderTitle: "Conservando sueños, protegiendo vidas",
+      },
+      {
+        bgImg: slider6,
+        sliderTitle: "Conservando sueños, protegiendo vidas",
+      },
+      {
+        bgImg: slider7,
         sliderTitle: "Conservando sueños, protegiendo vidas",
       },
     ];

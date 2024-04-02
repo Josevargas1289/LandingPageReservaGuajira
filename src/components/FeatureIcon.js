@@ -1,47 +1,41 @@
 import React, { Component } from "react";
-import imgFlayer from "../assets/img/icon/IconGaleryEcosistemas.svg";
-import imgiconEco from "../assets/img/icon/IconGaleryProyectos.svg";
-import { Link } from "react-router-dom";
+import imgFlayer from "../assets/img/icon/ave.svg";
+import imgiconEco from "../assets/img/icon/hoja.svg";
 
 class FeatureIcon extends Component {
   render() {
+    const { handleClickFlora, handleClickFauna } = this.props;
+
     return (
       <div>
         <div className="feature-section containerEcosistema ">
           <div className="containerobjetEcosistemas">
             <div>
               <h1 className="single-feature-icon__content p-color">
-                Conoce nuestra Galería
+                Conoce nuestros <br /> ecosistemas
               </h1>
               <p className="single-feature-icon__content p-color">
-                Explora la diversidad de flora y fauna, y conoce nuestros <br />
-                esfuerzos en el arboretum y los viveros. ¡Inspírate con la{" "}
-                <br />
-                naturaleza y la preservación ambiental.
+                Sumérgete en un viaje único donde la <br /> naturaleza y la
+                sostenibilidad se unen <br /> para preservar nuestro entorno
               </p>
             </div>
             <div className="car-ecositemas">
               <div className="iconos-car">
-                <img src={imgiconEco} alt="Flyer" />
-                <Link to={"/eco_galery"}>
-                  <button
-                    onClick={() => window.scrollTo(0, 0)}
-                    className="a_GaleryEco"
-                  >
-                    Ecosistemas
-                  </button>
-                </Link>
-              </div>
-              <div className="iconos-car">
                 <img src={imgFlayer} alt="Flyer" />
-                <Link to={"/pro-galery"}>
-                  <button
-                    onClick={() => window.scrollTo(0, 0)}
-                    className="a_GaleryProyect"
-                  >
-                    Proyectos
-                  </button>
-                </Link>
+                <button onClick={handleClickFlora} className="a_flora">
+                  Flora
+                </button>
+              </div>
+              <div className="iconos-car car_fauna">
+                <img src={imgiconEco} alt="Flyer" />
+                <button
+                  onClick={() => {
+                    handleClickFauna();
+                  }}
+                  className="a_fauna"
+                >
+                  Fauna
+                </button>
               </div>
             </div>
           </div>
@@ -52,3 +46,4 @@ class FeatureIcon extends Component {
 }
 
 export default FeatureIcon;
+
