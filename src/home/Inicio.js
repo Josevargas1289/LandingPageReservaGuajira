@@ -13,7 +13,7 @@ import MobileMenu from "../components/MobileMenu";
 // import AboutProyect from "../components/AbaoutProyect";
 import Funfact from "../components/Funfact";
 
-class HomeThree extends Component {
+class Inicio extends Component {
   render() {
     return (
       <div>
@@ -47,4 +47,4 @@ class HomeThree extends Component {
   }
 }
 
-export default HomeThree;
+export default Inicio;

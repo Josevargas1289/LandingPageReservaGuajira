@@ -1,37 +1,50 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-import FeatureIcon from "../components/FeatureIcon";
-// import Funfact from "../components/Funfact";
-// import TeamMemberGrid from "../components/TeamMemberGrid";
-// import TestimonialSlider from "../components/TestimonialSlider";
-// import BrandLogoSlider from "../components/BrandLogoSlider";
+import ProjectComponentOne from "../components/ProjectoComponenteOne";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/imgEcosistemas.jpg";
-import AboutProyect from "../components/AbaoutProyect";
-import FloraComponent from "../components/FloraComponent";
-import FaunaComponent from "../components/FaunaComponent ";
+import backgroundImage from "../assets/img/imgBig/bannerProyectos.jpg";
+import FeatureIconProject from "../components/feactureIconProject";
+import ArboretumComponent from "../components/ArboretumComponent";
+import ArbolesComponent from "../components/ArbolesComponent";
+import ViverosComponent from "../components/ViverosComponent";
 
-class About extends Component {
+class Proyectos extends Component {
   constructor() {
     super();
     this.state = {
       isOpen: false,
-      showFlora: true, // Mostrar FloraComponent por defecto
-      showFauna: false,
+      showArboretum: true, // Mostrar FloraComponent por defecto
+      showArboles: false,
+      showViveros: false,
     };
   }
 
-  handleClickFlora = () => {
-    this.setState({ showFlora: true, showFauna: false });
+  handleClickarboretum = () => {
+    this.setState({
+      showArboretum: true,
+      showArboles: false,
+      showViveros: false,
+    });
   };
 
-  handleClickFauna = () => {
-    this.setState({ showFauna: true, showFlora: false });
+  handleClickArboles = () => {
+    this.setState({
+      showArboles: true,
+      showArboretum: false,
+      showViveros: false,
+    });
+  };
+  handleClickViveros = () => {
+    this.setState({
+      showViveros: true,
+      showArboretum: false,
+      showArboles: false,
+    });
   };
 
   render() {
-    const { showFlora, showFauna } = this.state;
+    const { showArboretum, showArboles, showViveros } = this.state;
 
     return (
       <div>
@@ -48,12 +61,12 @@ class About extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Ecosistemas</h1>
+                  <h1>Proyectos</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Inicio</a>
                     </li>
-                    <li>Ecosistemas</li>
+                    <li>Proyectos</li>
                   </ul>
                 </div>
               </div>
@@ -65,20 +78,22 @@ class About extends Component {
         <div className="page-wrapper section-space--inner--bottom--120  ">
           {/* About section */}
           <div className="about-section ">
-            <AboutProyect />
+            <ProjectComponentOne />
           </div>
           {/* end about section */}
 
           {/* Feature Icon */}
-          <FeatureIcon
+          <FeatureIconProject
             background="grey-bg"
-            handleClickFlora={this.handleClickFlora}
-            handleClickFauna={this.handleClickFauna}
+            handleClickarboretum={this.handleClickarboretum}
+            handleClickArboles={this.handleClickArboles}
+            handleClickViveros={this.handleClickViveros}
           />
 
           {/* Renderizar FloraComponent o FaunaComponent según el estado */}
-          {showFlora && <FloraComponent />}
-          {showFauna && <FaunaComponent />}
+          {showArboretum && <ArboretumComponent />}
+          {showArboles && <ArbolesComponent />}
+          {showViveros && <ViverosComponent />}
 
           {/* Resto del contenido */}
           {/* <Funfact /> */}
@@ -97,4 +112,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Proyectos;

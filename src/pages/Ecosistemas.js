@@ -1,50 +1,37 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-import ProjectComponentOne from "../components/ProjectoComponenteOne";
+import FeatureIcon from "../components/FeatureIcon";
+// import Funfact from "../components/Funfact";
+// import TeamMemberGrid from "../components/TeamMemberGrid";
+// import TestimonialSlider from "../components/TestimonialSlider";
+// import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/bannerProyectos.jpg";
-import FeatureIconProject from "../components/feactureIconProject";
-import ArboretumComponent from "../components/ArboretumComponent";
-import ArbolesComponent from "../components/ArbolesComponent";
-import ViverosComponent from "../components/ViverosComponent";
+import backgroundImage from "../assets/img/imgBig/imgEcosistemas.jpg";
+import AboutProyect from "../components/AbaoutProyect";
+import FloraComponent from "../components/FloraComponent";
+import FaunaComponent from "../components/FaunaComponent ";
 
-class Services extends Component {
+class Ecosistemas extends Component {
   constructor() {
     super();
     this.state = {
       isOpen: false,
-      showArboretum: true, // Mostrar FloraComponent por defecto
-      showArboles: false,
-      showViveros: false,
+      showFlora: true, // Mostrar FloraComponent por defecto
+      showFauna: false,
     };
   }
 
-  handleClickarboretum = () => {
-    this.setState({
-      showArboretum: true,
-      showArboles: false,
-      showViveros: false,
-    });
+  handleClickFlora = () => {
+    this.setState({ showFlora: true, showFauna: false });
   };
 
-  handleClickArboles = () => {
-    this.setState({
-      showArboles: true,
-      showArboretum: false,
-      showViveros: false,
-    });
-  };
-  handleClickViveros = () => {
-    this.setState({
-      showViveros: true,
-      showArboretum: false,
-      showArboles: false,
-    });
+  handleClickFauna = () => {
+    this.setState({ showFauna: true, showFlora: false });
   };
 
   render() {
-    const { showArboretum, showArboles, showViveros } = this.state;
+    const { showFlora, showFauna } = this.state;
 
     return (
       <div>
@@ -61,12 +48,12 @@ class Services extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Proyectos</h1>
+                  <h1>Ecosistemas</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Inicio</a>
                     </li>
-                    <li>Proyectos</li>
+                    <li>Ecosistemas</li>
                   </ul>
                 </div>
               </div>
@@ -78,22 +65,20 @@ class Services extends Component {
         <div className="page-wrapper section-space--inner--bottom--120  ">
           {/* About section */}
           <div className="about-section ">
-            <ProjectComponentOne />
+            <AboutProyect />
           </div>
           {/* end about section */}
 
           {/* Feature Icon */}
-          <FeatureIconProject
+          <FeatureIcon
             background="grey-bg"
-            handleClickarboretum={this.handleClickarboretum}
-            handleClickArboles={this.handleClickArboles}
-            handleClickViveros={this.handleClickViveros}
+            handleClickFlora={this.handleClickFlora}
+            handleClickFauna={this.handleClickFauna}
           />
 
           {/* Renderizar FloraComponent o FaunaComponent según el estado */}
-          {showArboretum && <ArboretumComponent />}
-          {showArboles && <ArbolesComponent />}
-          {showViveros && <ViverosComponent />}
+          {showFlora && <FloraComponent />}
+          {showFauna && <FaunaComponent />}
 
           {/* Resto del contenido */}
           {/* <Funfact /> */}
@@ -112,4 +97,4 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export default Ecosistemas;
