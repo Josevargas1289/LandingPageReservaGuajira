@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import FeatureIcon from "../components/FeatureIcon";
-// import Funfact from "../components/Funfact";
-// import TeamMemberGrid from "../components/TeamMemberGrid";
-// import TestimonialSlider from "../components/TestimonialSlider";
-// import BrandLogoSlider from "../components/BrandLogoSlider";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/imgEcosistemas.jpg";
+import backgroundImage from "../assets/img/imgBig/Img_galery_slider.jpg";
 import AboutProyect from "../components/AbaoutProyect";
-import FloraComponent from "../components/FloraComponent";
-import FaunaComponent from "../components/FaunaComponent ";
 
 class Galery extends Component {
   constructor() {
@@ -22,17 +16,7 @@ class Galery extends Component {
     };
   }
 
-  handleClickFlora = () => {
-    this.setState({ showFlora: true, showFauna: false });
-  };
-
-  handleClickFauna = () => {
-    this.setState({ showFauna: true, showFlora: false });
-  };
-
   render() {
-    const { showFlora, showFauna } = this.state;
-
     return (
       <div>
         <NavBar />
@@ -48,12 +32,12 @@ class Galery extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Ecosistemas</h1>
+                  <h1>Galería</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Inicio</a>
                     </li>
-                    <li>Ecosistemas</li>
+                    <li>Galería</li>
                   </ul>
                 </div>
               </div>
@@ -62,7 +46,7 @@ class Galery extends Component {
         </div>
         {/* end breadcrumb */}
 
-        <div className="page-wrapper section-space--inner--bottom--120  ">
+        <div className="page-wrapper   ">
           {/* About section */}
           <div className="about-section ">
             <AboutProyect />
@@ -70,21 +54,9 @@ class Galery extends Component {
           {/* end about section */}
 
           {/* Feature Icon */}
-          <FeatureIcon
-            background="grey-bg"
-            handleClickFlora={this.handleClickFlora}
-            handleClickFauna={this.handleClickFauna}
-          />
+          <FeatureIcon />
 
           {/* Renderizar FloraComponent o FaunaComponent según el estado */}
-          {showFlora && <FloraComponent />}
-          {showFauna && <FaunaComponent />}
-
-          {/* Resto del contenido */}
-          {/* <Funfact /> */}
-          {/* <TeamMemberGrid />
-          <TestimonialSlider />
-          <BrandLogoSlider background="" />  */}
         </div>
 
         {/* Footer */}
