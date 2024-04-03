@@ -1,48 +1,20 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-// import ProjectComponentOne from "../components/ProjectoComponenteOne";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/galeryEcosistemas.jpg"
-// import FeatureIconProject from "../components/feactureIconProject";
-// import ArboretumComponent from "../components/ArboretumComponent";
-// import ArbolesComponent from "../components/ArbolesComponent";
-// import ViverosComponent from "../components/ViverosComponent";
-
+import backgroundImage from "../assets/img/imgBig/galeryEcosistemas.jpg";
+import FaunaGalleryLeft from "../components/FaunaGalleryLeft";
+import SidebarFauna from "../components/SidebarFauna";
+import FloraGalleryLeft from "../components/FloraGalleryLeft";
+import SidebarFlora from "../components/SidebarFlora";
 
 class GaleryEcosistemas extends Component {
   constructor() {
     super();
     this.state = {
       isOpen: false,
-      showArboretum: true, // Mostrar FloraComponent por defecto
-      showArboles: false,
-      showViveros: false,
     };
   }
-
-  handleClickarboretum = () => {
-    this.setState({
-      showArboretum: true,
-      showArboles: false,
-      showViveros: false,
-    });
-  };
-
-  handleClickArboles = () => {
-    this.setState({
-      showArboles: true,
-      showArboretum: false,
-      showViveros: false,
-    });
-  };
-  handleClickViveros = () => {
-    this.setState({
-      showViveros: true,
-      showArboretum: false,
-      showArboles: false,
-    });
-  };
 
   render() {
     // const { showArboretum, showArboles, showViveros } = this.state;
@@ -75,30 +47,38 @@ class GaleryEcosistemas extends Component {
           </div>
         </div>
         {/* end breadcrumb */}
-
-        <div className="page-wrapper section-space--inner--bottom--120  ">
-          {/* About section */}
-          <div className="about-section ">{/* <ProjectComponentOne /> */}</div>
-          {/* end about section */}
-
-          {/* Feature Icon */}
-          {/* <FeatureIconProject
-            background="grey-bg"
-            handleClickarboretum={this.handleClickarboretum}
-            handleClickArboles={this.handleClickArboles}
-            handleClickViveros={this.handleClickViveros}
-          /> */}
-
-          {/* Renderizar FloraComponent o FaunaComponent según el estado */}
-          {/* {showArboretum && <ArboretumComponent />}
-          {showArboles && <ArbolesComponent />}
-          {showViveros && <ViverosComponent />} */}
-
-          {/* Resto del contenido */}
-          {/* <Funfact /> */}
-          {/* <TeamMemberGrid />
-          <TestimonialSlider />
-          <BrandLogoSlider background="" />  */}
+        <div className="page-wrapper section-space--inner--120">
+          {/*Service section start*/}
+          <div className="service-section">
+            <div className="container_galery">
+              <div className="row">
+                <div className="col-lg-8 col-12 order-1 order-lg-2">
+                  <div className="service-details">
+                    {/* service gallery */}
+                    <FaunaGalleryLeft />
+                  </div>
+                </div>
+                <div className="col-lg-4 col-12  ">
+                  <SidebarFauna />
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div className="container_galery">
+              <div className="row">
+                <div className="col-lg-8 col-12 order-1 order-lg-2">
+                  <div className="service-details">
+                    {/* service gallery */}
+                    <FloraGalleryLeft/>
+                  </div>
+                </div>
+                <div className="col-lg-4 col-12  ">
+                  <SidebarFlora/>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*Service section end*/}
         </div>
 
         {/* Footer */}
