@@ -88,7 +88,9 @@ class Footer extends Component {
                         <h4 className="footer-widget__title">Proyectos</h4>
                         <ul className="footer-widget__navigation">
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Arboretum</a>
+                          <div className="footer-desc">
+                              Arboretum
+                            </div>
                           </li>
                           <br />
                           <li>

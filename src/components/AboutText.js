@@ -58,8 +58,6 @@ class AboutText extends Component {
                     tiene para ofrecer. ¡Te esperamos para una experiencia
                     inolvidable!
                   </p>
-
-                  <ModalB />
                 </div>
               </div>
             </div>

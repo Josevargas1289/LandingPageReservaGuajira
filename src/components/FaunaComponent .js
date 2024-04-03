@@ -4,6 +4,9 @@ import imgBannerFauna from "../assets/img/imgBig/imgBannerFauna.jpg";
 import imgAvesTab from "../assets/img/imgBig/imgAvesTab.jpg";
 import imgAnfibiosTab from "../assets/img/imgBig/imgAnfibiosfauna.jpg";
 import imgReptilesTab from "../assets/img/imgBig/imgReptilesFauna.jpg";
+import Modal7 from "./modal/Modal7";
+import Modal8 from "./modal/Modal8";
+import Modal9 from "./modal/Modal9";
 
 class FaunaComponent extends Component {
   render() {
@@ -33,22 +36,22 @@ class FaunaComponent extends Component {
         bgUrl: imgAvesTab,
         contentTitle: "Aves",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        serviceLink: "service-details-left-sidebar",
+          "Se realizaron recorridos de 1.5 km de longitud en áreas boscosas, pastos enmalezados y bordes de bosque. Se emplearon métodos de detección visual y auditiva, así como grabación de vocalizaciones. ",
+        serviceLink: <Modal7 />,
       },
       {
         bgUrl: imgAnfibiosTab,
         contentTitle: "Anfibios",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        serviceLink: "service-details-left-sidebar",
+          "Sumérgete en la fascinante diversidad de los anfibios que habitan en nuestra reserva natural.",
+        serviceLink: <Modal8 />,
       },
       {
         bgUrl: imgReptilesTab,
         contentTitle: "Reptiles",
         contentDesc:
-          "Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        serviceLink: "service-details-left-sidebar",
+          'Descubre la fascinante diversidad de reptiles que habitan en la reserva natural "Paraíso de los Deseos".',
+        serviceLink: <Modal9 />,
       },
     ];
 
@@ -64,12 +67,7 @@ class FaunaComponent extends Component {
             <div className="service-tab__single-content">
               <h3 className="service-tab__title">{val.contentTitle}</h3>
               <p className="service-tab__text">{val.contentDesc}</p>
-              <a
-                href={`${process.env.PUBLIC_URL}/${val.serviceLink}`}
-                className="see-more-link"
-              >
-                SEE MORE
-              </a>
+              <div>{val.serviceLink}</div>
             </div>
           </div>
         </TabPanel>
