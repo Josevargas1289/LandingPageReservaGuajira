@@ -50,7 +50,7 @@ class GaleryEcosistemas extends Component {
           <div className="service-section  ">
             <div className="container">
               <div className="row">
-                <div className="col-lg-8 col-12 order-1 order-lg-2">
+                <div className="col-lg-8 col-12 order-4 order-lg-1">
                   <div className="service-details">
                     {/* service gallery */}
                     <FaunaGalleryLeft />

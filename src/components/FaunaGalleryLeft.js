@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SwiperSlider, { SwiperSlide } from "./swiper";
+import SwiperSlider, { SwiperSlide, virtualIndex } from "./swiper";
 import imageData from "../assets/img/Galery/Fauna/ImaganesGaleryFaunaData"; // Importa el archivo imageData
 
 class FaunaGalleryLeft extends Component {
@@ -9,6 +9,7 @@ class FaunaGalleryLeft extends Component {
       slidesPerView: 1,
       loop: true,
       navigation: true,
+      virtualIndex: true,
     };
 
     /* service image gallery component */
