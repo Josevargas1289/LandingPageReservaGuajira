@@ -22,6 +22,7 @@ class FaunaGalleryLeft extends Component {
               src={val.src} // Utiliza la ruta de la imagen desde el objeto
               className="img-fluid"
               alt={val.name} // Utiliza el nombre de la imagen como alt
+              loading="lazy"
             />
           </div>
         </SwiperSlide>
