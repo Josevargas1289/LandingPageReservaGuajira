@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import NavBar from "../components/NavBar";
-// import ProjectComponentOne from "../components/ProjectoComponenteOne";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import backgroundImage from "../assets/img/imgBig/galeryProyectos.jpg";
-// import FeatureIconProject from "../components/feactureIconProject";
-// import ArboretumComponent from "../components/ArboretumComponent";
-// import ArbolesComponent from "../components/ArbolesComponent";
-// import ViverosComponent from "../components/ViverosComponent";
+import ArboretumGalleryLeft from "../components/ArboretumGalleryLeft ";
+import SidebarArboretum from "../components/SidebarArboretum";
+import ViverosGalleryLeft from "../components/ViverosGalleryLeft ";
+import SidebarViveros from "../components/SidebarViveros";
 
 class GaleryProjects extends Component {
   constructor() {
@@ -74,30 +73,43 @@ class GaleryProjects extends Component {
           </div>
         </div>
         {/* end breadcrumb */}
+        <div className="page-wrapper section-space--inner--120">
+          {/*Service section start*/}
+          <div className="service-section  ">
+            <div className="container container_galery">
+              <div className="row">
+                <div className="col-lg-8 col-12 order-4 order-lg-1">
+                  <div className="service-details">
+                    {/* service gallery */}
+                    <ArboretumGalleryLeft />
+                  </div>
+                </div>
+                <div className="col-lg-4 col-12 order-3 order-lg-3">
+                  <SidebarArboretum />
+                </div>
+              </div>
+            </div>
+            <div className="container container_galery">
+              <div className="row">
+                <div className="col-lg-8 col-12 order-4 order-lg-1">
+                  <div className="service-details">
+                    {/* service gallery */}
+                    <ViverosGalleryLeft />
+                  </div>
+                </div>
+                <div className="col-lg-4 col-12 order-3 order-lg-3">
+                  <SidebarViveros />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*Service section end*/}
+        </div>
 
         <div className="page-wrapper section-space--inner--bottom--120  ">
           {/* About section */}
           <div className="about-section ">{/* <ProjectComponentOne /> */}</div>
           {/* end about section */}
-
-          {/* Feature Icon */}
-          {/* <FeatureIconProject
-            background="grey-bg"
-            handleClickarboretum={this.handleClickarboretum}
-            handleClickArboles={this.handleClickArboles}
-            handleClickViveros={this.handleClickViveros}
-          /> */}
-
-          {/* Renderizar FloraComponent o FaunaComponent según el estado */}
-          {/* {showArboretum && <ArboretumComponent />}
-          {showArboles && <ArbolesComponent />}
-          {showViveros && <ViverosComponent />} */}
-
-          {/* Resto del contenido */}
-          {/* <Funfact /> */}
-          {/* <TeamMemberGrid />
-          <TestimonialSlider />
-          <BrandLogoSlider background="" />  */}
         </div>
 
         {/* Footer */}
