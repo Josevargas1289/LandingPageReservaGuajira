@@ -27,7 +27,7 @@ class SidebarFauna extends Component {
     });
 
     return (
-      <div>
+      <div className="animate__animated animate__fadeInTopRight">
         <div className="sidebar-wrapper">
           <div className="sidebar">
             <h3 className="sidebar-title">Fauna</h3>

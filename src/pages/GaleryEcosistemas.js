@@ -20,7 +20,7 @@ class GaleryEcosistemas extends Component {
     // const { showArboretum, showArboles, showViveros } = this.state;
 
     return (
-      <div>
+      <div className="">
         <NavBar />
 
         {/* breadcrumb */}
@@ -49,7 +49,7 @@ class GaleryEcosistemas extends Component {
         {/* end breadcrumb */}
         <div className="page-wrapper section-space--inner--120">
           {/*Service section start*/}
-          <div className="service-section">
+          <div className="service-section  ">
             <div className="container_galery">
               <div className="row">
                 <div className="col-lg-8 col-12 order-1 order-lg-2">
@@ -64,16 +64,17 @@ class GaleryEcosistemas extends Component {
               </div>
             </div>
             <hr />
+            <br />
             <div className="container_galery">
               <div className="row">
                 <div className="col-lg-8 col-12 order-1 order-lg-2">
                   <div className="service-details">
                     {/* service gallery */}
-                    <FloraGalleryLeft/>
+                    <FloraGalleryLeft />
                   </div>
                 </div>
                 <div className="col-lg-4 col-12  ">
-                  <SidebarFlora/>
+                  <SidebarFlora />
                 </div>
               </div>
             </div>

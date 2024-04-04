@@ -1,37 +1,27 @@
 import React, { Component } from "react";
 import SwiperSlider, { SwiperSlide } from "./swiper";
+import imageData from "../assets/img/Galery/Fauna/ImaganesGaleryFaunaData"; // Importa el archivo imageData
 
 class FaunaGalleryLeft extends Component {
   render() {
     /* service image gallery slider params*/
-
     const params = {
       slidesPerView: 1,
       loop: true,
       navigation: true,
     };
 
-    /* service image gallery data */
-
-    let imageGalleryData = [
-      { img: "service-details-1.jpg" },
-      { img: "service-details-2.jpg" },
-      { img: "service-details-3.jpg" },
-      { img: "service-details-4.jpg" },
-      { img: "service-details-5.jpg" },
-      { img: "service-details-6.jpg" },
-    ];
-
     /* service image gallery component */
-
-    let ImageGalleryDataList = imageGalleryData.map((val, i) => {
+    let ImageGalleryDataList = imageData.map((val) => {
       return (
-        <SwiperSlide className="service-gallery__single-slide " key={i}>
+        <SwiperSlide className="service-gallery__single-slide" key={val.id}>
           <div className="item section-space--inner--bottom--120">
+            {/* Utiliza la ruta de la imagen desde el objeto */}
             <img
-              src={`assets/img/service/${val.img}`}
+              style={{ width: "770px" }}
+              src={val.src} // Utiliza la ruta de la imagen desde el objeto
               className="img-fluid"
-              alt="gallery data"
+              alt={val.name} // Utiliza el nombre de la imagen como alt
             />
           </div>
         </SwiperSlide>
