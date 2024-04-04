@@ -8,10 +8,6 @@ class SidebarFauna extends Component {
         sidebarListText:
           "¡Descubre la increíble biodiversidad que habita en nuestra reserva! Explora nuestra galería de fauna y maravíllate con las diversas especies que llaman a nuestro paraíso su hogar.",
       },
-      {
-        sidebarListIcon: "Galería",
-        icon: <box-icon name="arrow-back"></box-icon>,
-      },
     ];
 
     let Datalist = data.map((val, i) => {
