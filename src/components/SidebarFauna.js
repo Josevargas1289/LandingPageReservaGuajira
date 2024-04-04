@@ -18,6 +18,7 @@ class SidebarFauna extends Component {
           <a href="/galeria">
             {val.icon} {val.sidebarListIcon}
           </a>
+          <p>{val.Text}</p>
         </li>
       );
     });

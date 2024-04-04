@@ -9,8 +9,10 @@ class SidebarFlora extends Component {
           "Explora la exuberante vida vegetal que adorna nuestra reserva. Adéntrate en nuestra galería de flora y descubre la diversidad de plantas, árboles y flores que hacen de nuestro paraíso un lugar único",
       },
       {
-        sidebarListIcon: "Galería",
-        icon: <box-icon name="arrow-back"></box-icon>,
+        sidebarListIcon: "Volver a Galería",
+        icon: (
+          <box-icon color="#009492" type="solid" name="door-open"></box-icon>
+        ),
       },
     ];
 

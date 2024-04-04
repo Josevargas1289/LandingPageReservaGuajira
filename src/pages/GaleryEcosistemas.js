@@ -5,6 +5,8 @@ import MobileMenu from "../components/MobileMenu";
 import backgroundImage from "../assets/img/imgBig/galeryEcosistemas.jpg";
 import FaunaGalleryLeft from "../components/FaunaGalleryLeft";
 import SidebarFauna from "../components/SidebarFauna";
+import FloraGalleryLeft from "../components/FloraGalleryLeft";
+import SidebarFlora from "../components/SidebarFlora";
 
 class GaleryEcosistemas extends Component {
   constructor() {
@@ -48,7 +50,7 @@ class GaleryEcosistemas extends Component {
         <div className="page-wrapper section-space--inner--120">
           {/*Service section start*/}
           <div className="service-section  ">
-            <div className="container">
+            <div className="container container_galery">
               <div className="row">
                 <div className="col-lg-8 col-12 order-4 order-lg-1">
                   <div className="service-details">
@@ -58,6 +60,19 @@ class GaleryEcosistemas extends Component {
                 </div>
                 <div className="col-lg-4 col-12 order-3 order-lg-3">
                   <SidebarFauna />
+                </div>
+              </div>
+            </div>
+            <div className="container container_galery">
+              <div className="row">
+                <div className="col-lg-8 col-12 order-4 order-lg-1">
+                  <div className="service-details">
+                    {/* service gallery */}
+                    <FloraGalleryLeft />
+                  </div>
+                </div>
+                <div className="col-lg-4 col-12 order-3 order-lg-3">
+                  <SidebarFlora />
                 </div>
               </div>
             </div>
