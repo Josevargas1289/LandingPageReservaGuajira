@@ -65,8 +65,6 @@ class GaleryEcosistemas extends Component {
             </div>
             <br />
             <br />
-            <br />
-            <br />
 
             <div className="container container_galery">
               <div className="row">
@@ -84,6 +82,8 @@ class GaleryEcosistemas extends Component {
           </div>
           {/*Service section end*/}
         </div>
+        <br />
+        <br />
 
         {/* Footer */}
         <Footer />
