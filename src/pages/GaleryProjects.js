@@ -16,8 +16,6 @@ class GaleryProjects extends Component {
     };
   }
 
- 
-
   render() {
     // const { showArboretum, showArboles, showViveros } = this.state;
 
@@ -65,6 +63,15 @@ class GaleryProjects extends Component {
                 </div>
               </div>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             <div className="container container_galery">
               <div className="row">
                 <div className="col-lg-8 col-12 order-4 order-lg-1">
