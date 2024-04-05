@@ -1,8 +1,6 @@
-
-
 import React, { Component } from "react";
 import SwiperSlider, { SwiperSlide } from "./swiper";
-import imageData from "../assets/img/Galery/Flora/ImgDataFlora"; // Importa el archivo imageData
+import imageData from "../assets/img/Galery/Viveros/ImaganesGaleryViverosData"; // Importa el archivo imageData
 
 class FloraGalleryLeft extends Component {
   render() {
@@ -11,7 +9,6 @@ class FloraGalleryLeft extends Component {
       slidesPerView: 1,
       loop: true,
       navigation: true,
-      virtualIndex: true,
     };
 
     /* service image gallery component */

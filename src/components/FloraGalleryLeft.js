@@ -11,7 +11,7 @@ class FloraGalleryLeft extends Component {
       slidesPerView: 1,
       loop: true,
       navigation: true,
-      virtualIndex: true,
+      
     };
 
     /* service image gallery component */

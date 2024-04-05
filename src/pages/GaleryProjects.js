@@ -13,34 +13,10 @@ class GaleryProjects extends Component {
     super();
     this.state = {
       isOpen: false,
-      showArboretum: true, // Mostrar FloraComponent por defecto
-      showArboles: false,
-      showViveros: false,
     };
   }
 
-  handleClickarboretum = () => {
-    this.setState({
-      showArboretum: true,
-      showArboles: false,
-      showViveros: false,
-    });
-  };
-
-  handleClickArboles = () => {
-    this.setState({
-      showArboles: true,
-      showArboretum: false,
-      showViveros: false,
-    });
-  };
-  handleClickViveros = () => {
-    this.setState({
-      showViveros: true,
-      showArboretum: false,
-      showArboles: false,
-    });
-  };
+ 
 
   render() {
     // const { showArboretum, showArboles, showViveros } = this.state;
