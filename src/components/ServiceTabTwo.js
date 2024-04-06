@@ -33,14 +33,14 @@ class ServiceTabTwo extends Component {
         contentTitle: "Arboretum",
         contentDesc:
           "Nuestro arboretum  no solo será fuente de semillas para regenerar los bosques, sino que también ayudará a moderar el clima y regular el ciclo del agua.",
-        serviceLink: "service-details-left-sidebar",
+        serviceLink: "arboretum",
       },
       {
         bgUrl: arbolesImgTabHome,
         contentTitle: "Arboles Plus",
         contentDesc:
           "La selección y protección de ejemplares excepcionales es clave en nuestro proyecto de conservación. Nos enorgullece informarte que hemos identificado siete árboles plus, contribuyendo así a la preservación de especies vitales para nuestros ecosistemas.",
-        serviceLink: "service-details-left-sidebar",
+        serviceLink: "arboles_plus",
       },
       {
         bgUrl: viverosimgTabHome,
@@ -67,7 +67,7 @@ class ServiceTabTwo extends Component {
                 href={`${process.env.PUBLIC_URL}/${val.serviceLink}`}
                 className="see-more-link"
               >
-                SEE MORE
+                VER MÁS
               </a>
             </div>
           </div>

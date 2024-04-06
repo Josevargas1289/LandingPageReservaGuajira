@@ -41,7 +41,7 @@ class FeatureIconProject extends Component {
                   }}
                   className="arbolesVivos_styled"
                 >
-                  Arboles vivos
+                  Arboles Plus
                 </button>
               </div>
               <div className="iconos-car car_fauna">

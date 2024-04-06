@@ -4,7 +4,7 @@ import imgArbolesPlus from "../assets/img/imgBig/imgArbolesPlus.jpg";
 
 const ArbolesComponent = () => {
   return (
-    <div className="about-section order-1 order-lg-2  section-space--inner--120 animate__animated animate__fadeInDown">
+    <div className="about-section order-1 order-lg-2  section-space--inner--120 animate__animated animate__backInLeft">
       <div className="container">
         <div className="about-wrapper row">
           <div className="col-sm-6 col-12 order-1 order-lg-2">

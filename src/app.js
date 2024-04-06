@@ -1,6 +1,8 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Spinner from "./components/Spinner";
+import Arboretum from "./pages/Arboretum";
+import ArbolesPlus from "./pages/ArbolesPlus";
 
 const Galery = lazy(() => import("./pages/Galery"));
 const Inicio = lazy(() => import("./home/Inicio"));
@@ -21,6 +23,10 @@ const App = () => {
           <Route path="/" element={<Inicio />} />
           <Route path="/ecosistemas" element={<Ecosistemas />} />
           <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/arboretum" element={<Arboretum/>} />
+          <Route path="/arboles_plus" element={<ArbolesPlus/>} />
+
+
           <Route path="/galeria" element={<Galery />} />
           <Route path="/eco_galery" element={<GaleryEcosistemas />} />
           <Route path="/pro-galery" element={<GaleryProjects />} />
