@@ -7,7 +7,7 @@ class FeatureIcongalery extends Component {
   render() {
     return (
       <div>
-        <div className="feature-section containerEcosistema ">
+        <div className="feature-section containerEcosistema container-gallery  ">
           <div className="containerobjetEcosistemas">
             <div>
               <h1 className="single-feature-icon__content p-color">

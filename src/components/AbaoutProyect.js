@@ -22,14 +22,7 @@ class AboutProyect extends Component {
             <div className="row align-items-center">
               <div className="col-md-6">
                 <div className="about-image-two">
-                  <img
-                    style={{
-                      height: "330px",
-                      borderRadius: "2%",
-                    }}
-                    src={imgecosistemassection}
-                    alt=""
-                  />
+                  <img src={imgecosistemassection} alt="" />
                 </div>
               </div>
               <div className="col-lg-6 col-md-6">
