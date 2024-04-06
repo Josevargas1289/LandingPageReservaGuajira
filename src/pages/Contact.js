@@ -2,7 +2,33 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
+import emailjs from "emailjs-com"; // Importar emailjs-com
+
 class Contact extends Component {
+  handleSubmit = (event) => {
+    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+
+    // Obtener los datos del formulario
+    const formData = new FormData(event.target);
+    const data = {
+      con_name: formData.get("con_name"),
+      con_email: formData.get("con_email"),
+      con_message: formData.get("con_message"),
+    };
+
+    // Enviar el formulario usando emailjs-com
+    emailjs.send("service_id", "template_id", data, "user_id")
+      .then((response) => {
+        console.log("Correo enviado con éxito:", response);
+        alert("¡Mensaje enviado con éxito!");
+        event.target.reset(); // Limpiar el formulario después del envío
+      })
+      .catch((error) => {
+        console.error("Error al enviar el correo:", error);
+        alert("¡Hubo un error al enviar el mensaje!");
+      });
+  };
+
   render() {
     return (
       <div>
@@ -12,21 +38,21 @@ class Contact extends Component {
         {/* breadcrumb */}
         {/*====================  breadcrumb area ====================*/}
         <div
-          className="breadcrumb-area breadcrumb-bg"
+          className="breadcrumb-area breadcrumb-bg animate__animated animate__fadeInDown"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`
+            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
           }}
         >
           <div className="container">
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Contact Us</h1>
+                  <h1>Contacto</h1>
                   <ul className="page-breadcrumb">
                     <li>
-                      <a href="/">Home</a>
+                      <a href="/">Inicio</a>
                     </li>
-                    <li>Contact Us</li>
+                    <li>Contacto</li>
                   </ul>
                 </div>
               </div>
@@ -45,7 +71,7 @@ class Contact extends Component {
                   <div className="contact-map">
                     <iframe
                       title="google-map"
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d392436.93004030554!2d-105.13838587646829!3d39.7265847007123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1558429398879!5m2!1sen!2sbd"
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2278.3481875697826!2d-76.1357837387079!3d8.692748884838704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDEnMzIuMyJOIDc2wrAwNyc1OS45Ilc!5e0!3m2!1ses-419!2sco!4v1712440864060!5m2!1ses-419!2sco" width="600" 
                       allowFullScreen
                     ></iframe>
                   </div>
@@ -54,7 +80,7 @@ class Contact extends Component {
               <div className="row">
                 <div className="col-lg-4 col-12">
                   <div className="contact-information">
-                    <h3>Contact Information</h3>
+                    <h3>Información de contacto</h3>
                     <ul>
                       <li>
                         <span className="icon">
@@ -62,8 +88,9 @@ class Contact extends Component {
                         </span>
                         <span className="text">
                           <span>
-                            Stock Building, 125 Main Street 1st Lane, San
-                            Francisco, USA
+                            Montería, Córdoba
+                            <br />
+                            Colombia
                           </span>
                         </span>
                       </li>
@@ -72,8 +99,9 @@ class Contact extends Component {
                           <i className="ion-ios-telephone-outline" />
                         </span>
                         <span className="text">
-                          <a href="tel:1234567890">(001) 24568 365 987</a>
-                          <a href="tel:1234567890">(001) 65897 569 784</a>
+                          <strong>Movil</strong>
+                          <br />
+                          <strong>3178233433</strong>
                         </span>
                       </li>
                       <li>
@@ -81,8 +109,8 @@ class Contact extends Component {
                           <i className="ion-ios-email-outline" />
                         </span>
                         <span className="text">
-                          <a href="mailto:info@example.com">info@example.com</a>
-                          <a href="mailto:info@example.com">info@example.com</a>
+                          <span>Email</span>
+                          <strong>reservanaturalpd@gmail.com</strong>
                         </span>
                       </li>
                     </ul>
@@ -90,32 +118,32 @@ class Contact extends Component {
                 </div>
                 <div className="col-lg-8 col-12">
                   <div className="contact-form">
-                    <h3>Leave Your Message</h3>
-                    <form id="contact-form">
+                    <h3>Dejanos un mensaje</h3>
+                    <form id="contact-form" onSubmit={this.handleSubmit}>
                       <div className="row row-10">
                         <div className="col-md-6 col-12 section-space--bottom--20">
                           <input
                             name="con_name"
                             type="text"
-                            placeholder="Your Name"
+                            placeholder="Nombre"
                           />
                         </div>
                         <div className="col-md-6 col-12 section-space--bottom--20">
                           <input
                             name="con_email"
                             type="email"
-                            placeholder="Your Email"
+                            placeholder="Email"
                           />
                         </div>
                         <div className="col-12">
                           <textarea
                             name="con_message"
-                            placeholder="Your Message"
+                            placeholder="Mensaje"
                             defaultValue={""}
                           />
                         </div>
                         <div className="col-12">
-                          <button>Send Message</button>
+                          <button type="submit">Enviar Mensaje</button>
                         </div>
                       </div>
                     </form>

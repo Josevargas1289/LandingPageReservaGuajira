@@ -38,7 +38,7 @@ class HeroSliderThree extends Component {
       return (
         <SwiperSlide key={i}>
           <div
-            className="hero-slider__single-item"
+            className="hero-slider__single-item animate__animated animate__fadeInDown"
             style={{ backgroundImage: `url(${val.bgImg})` }}
           >
             <div className="hero-slider__content-wrapper">

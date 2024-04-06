@@ -2,17 +2,16 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
-import backgroundImage from "../assets/img/imgBig/Img_galery_slider.jpg";
-import GalerySectionOne from "../components/GalerySectionOne";
-import FeatureIcongalery from "../components/FectureIconGalery";
+import backgroundImage from "../assets/img/Galery/Viveros/imgViveros-39.jpg";
+import ViverosTabHome from "../components/ViverosTabHome"
 
-class Galery extends Component {
+
+
+class Arboretum extends Component {
   constructor() {
     super();
     this.state = {
       isOpen: false,
-      showFlora: true, // Mostrar FloraComponent por defecto
-      showFauna: false,
     };
   }
 
@@ -32,12 +31,12 @@ class Galery extends Component {
             <div className="row">
               <div className="col">
                 <div className="page-banner text-center">
-                  <h1>Galería</h1>
+                  <h1>Viveros</h1>
                   <ul className="page-breadcrumb">
                     <li>
                       <a href="/">Inicio</a>
                     </li>
-                    <li>Galería</li>
+                    <li>Viveros</li>
                   </ul>
                 </div>
               </div>
@@ -46,17 +45,11 @@ class Galery extends Component {
         </div>
         {/* end breadcrumb */}
 
-        <div className="page-wrapper   ">
+        <div className="page-wrapper section-space--inner--bottom--120  ">
           {/* About section */}
           <div className="about-section ">
-            <GalerySectionOne />
+            <ViverosTabHome/>
           </div>
-          {/* end about section */}
-
-          {/* Feature Icon */}
-          <FeatureIcongalery />
-
-          {/* Renderizar FloraComponent o FaunaComponent según el estado */}
         </div>
 
         {/* Footer */}
@@ -69,4 +62,4 @@ class Galery extends Component {
   }
 }
 
-export default Galery;
+export default Arboretum;

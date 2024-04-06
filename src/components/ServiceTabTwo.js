@@ -47,7 +47,7 @@ class ServiceTabTwo extends Component {
         contentTitle: "Viveros",
         contentDesc:
           "Buscamos conservar la biodiversidad y promover la producción sostenible de especies vegetales clave. Nuestro vivero, ubicado cerca de la represa, garantiza un cuidado óptimo para las plantas en proceso de germinación",
-        serviceLink: "service-details-left-sidebar",
+        serviceLink: "viveros",
       },
     ];
 

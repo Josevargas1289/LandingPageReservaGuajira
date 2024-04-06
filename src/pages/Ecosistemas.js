@@ -40,7 +40,7 @@ class Ecosistemas extends Component {
 
         {/* breadcrumb */}
         <div
-          className="breadcrumb-area breadcrumb-bg "
+          className="breadcrumb-area breadcrumb-bg animate__animated animate__fadeInDown "
           style={{
             backgroundImage: `url(${backgroundImage})`,
           }}

@@ -116,12 +116,18 @@ class MobileMenu extends Component {
                     </Link>
                     <ul className="sub-menu">
                       <li>
-                        <Link to={`${process.env.PUBLIC_URL}/eco_galery`}>
+                        <Link
+                          onClick={() => window.scrollTo(0, 0)}
+                          to={`${process.env.PUBLIC_URL}/eco_galery`}
+                        >
                           Ecosistemas
                         </Link>
                       </li>
                       <li>
-                        <Link to={`${process.env.PUBLIC_URL}/pro-galery`}>
+                        <Link
+                          onClick={() => window.scrollTo(0, 0)}
+                          to={`${process.env.PUBLIC_URL}/pro-galery`}
+                        >
                           Poyectos
                         </Link>
                       </li>
