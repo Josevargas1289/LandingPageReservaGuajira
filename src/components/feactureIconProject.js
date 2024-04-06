@@ -1,66 +1,76 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import iconarboretum from "../assets/img/icon/arboretumiconProyect.svg";
 import arbolesVivosIcon from "../assets/img/icon/arbolesviconproject.svg";
 import viverosIcon from "../assets/img/icon/viverosiconproject.svg";
+import iconChangearboretum from "../assets/img/icon/ImgChangeArboretum.svg";
+import arbolesVivosIconChange from "../assets/img/icon/ImgChangeArbolesPlus.svg";
+import viverosIconChange from "../assets/img/icon/ImgChangeViveros.svg";
 
-class FeatureIconProject extends Component {
-  render() {
-    const { handleClickarboretum, handleClickArboles, handleClickViveros } =
-      this.props;
+const FeatureIconProject = (props) => {
+  const [img1, setImg1] = useState(iconChangearboretum);
+  const [img2, setImg2] = useState(arbolesVivosIcon);
+  const [img3, setImg3] = useState(viverosIcon);
 
-    return (
-      <div>
-        <div className="feature-section containerIconProyect ">
-          <div className="containerobjetEcosistemas">
-            <div>
-              <h1 className="single-feature-icon__content p-color">
-                Conoce nuestros <br /> proyectos
-              </h1>
-              <p className="single-feature-icon__content p-color">
-                Descubre nuestros proyectos de conservación <br /> y siembra.
-                Únete a nosotros mientras trabajamos para <br /> preservar la
-                biodiversidad, proteger hábitats <br /> amenazados y sembrar
-                esperanza para un futuro <br /> sostenible.
-              </p>
+  const handleClickArboles = () => {
+    setImg2(arbolesVivosIconChange);
+    setImg3(viverosIcon);
+    setImg1(iconarboretum);
+    props.handleClickArboles();
+  };
+
+  const handleClickViveros = () => {
+    setImg3(viverosIconChange);
+    setImg2(arbolesVivosIcon);
+    setImg1(iconarboretum);
+    props.handleClickViveros();
+  };
+
+  const handleClickArboretum = () => {
+    setImg1(iconChangearboretum);
+    setImg2(arbolesVivosIcon);
+    setImg3(viverosIcon);
+    props.handleClickarboretum();
+  };
+
+  return (
+    <div>
+      <div className="feature-section containerIconProyect">
+        <div className="containerobjetEcosistemas">
+          <div>
+            <h1 className="single-feature-icon__content p-color">
+              Conoce nuestros <br /> proyectos
+            </h1>
+            <p className="single-feature-icon__content p-color">
+              Descubre nuestros proyectos de conservación <br /> y siembra.
+              Únete a nosotros mientras trabajamos para <br /> preservar la
+              biodiversidad, proteger hábitats <br /> amenazados y sembrar
+              esperanza para un futuro <br /> sostenible.
+            </p>
+          </div>
+          <div className="car-ecositemas">
+            <div className="iconos-car">
+              <img src={img1} alt="Flyer" />
+              <button onClick={handleClickArboretum} className="arboretum_styled">
+                Arboretum
+              </button>
             </div>
-            <div className="car-ecositemas">
-              <div className="iconos-car">
-                <img src={iconarboretum} alt="Flyer" />
-                <button
-                  onClick={handleClickarboretum}
-                  className="arboretum_styled"
-                >
-                  Arboretum
-                </button>
-              </div>
-              <div className="iconos-car car_fauna">
-                <img src={arbolesVivosIcon} alt="Flyer" />
-                <button
-                  onClick={() => {
-                    handleClickArboles();
-                  }}
-                  className="arbolesVivos_styled"
-                >
-                  Arboles Plus
-                </button>
-              </div>
-              <div className="iconos-car car_fauna">
-                <img src={viverosIcon} alt="Flyer" />
-                <button
-                  onClick={() => {
-                    handleClickViveros();
-                  }}
-                  className="viveros_styled"
-                >
-                  Viveros
-                </button>
-              </div>
+            <div className="iconos-car car_fauna">
+              <img src={img2} alt="Flyer" />
+              <button onClick={handleClickArboles} className="arbolesVivos_styled">
+                Arboles Plus
+              </button>
+            </div>
+            <div className="iconos-car car_fauna">
+              <img src={img3} alt="Flyer" />
+              <button onClick={handleClickViveros} className="viveros_styled">
+                Viveros
+              </button>
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default FeatureIconProject;
