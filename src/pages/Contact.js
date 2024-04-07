@@ -3,6 +3,9 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import MobileMenu from "../components/MobileMenu";
 import emailjs from "emailjs-com"; // Importar emailjs-com
+import Swal from "sweetalert2";
+import backgroundImage from "../assets/img/Galery/Viveros/imgViveros-10.jpg"
+
 
 class Contact extends Component {
   handleSubmit = (event) => {
@@ -21,13 +24,24 @@ class Contact extends Component {
     emailjs
       .send("service_84oy6fp", "template_yzgj402", data, "HKGEPgH0IjSAAlbzC")
       .then((response) => {
-        console.log("Correo enviado con éxito:", response);
-        alert("¡Mensaje enviado con éxito!");
+        Swal.fire({
+          title: "Mensaje enviado",
+          icon: "success",
+          confirmButtonText: "Aceptar",
+          customClass: {
+            confirmButton: 'mi-clase-css',
+           
+          }
+        });
         event.target.reset(); // Limpiar el formulario después del envío
       })
       .catch((error) => {
-        console.error("Error al enviar el correo:", error);
-        alert("¡Hubo un error al enviar el mensaje!");
+        Swal.fire({
+          title: "Error",
+          text: "su mensaje no se envio",
+          icon: "error",
+          confirmButtonText: "Aceptar",
+        });
       });
   };
 
@@ -42,7 +56,7 @@ class Contact extends Component {
         <div
           className="breadcrumb-area breadcrumb-bg animate__animated animate__fadeInDown"
           style={{
-            backgroundImage: `url(assets/img/backgrounds/funfact-bg.jpg)`,
+            backgroundImage: `url(${backgroundImage})`,
           }}
         >
           <div className="container">
@@ -129,6 +143,7 @@ class Contact extends Component {
                             name="con_name"
                             type="text"
                             placeholder="Nombre"
+                            required
                           />
                         </div>
                         <div className="col-md-6 col-12 section-space--bottom--20">
@@ -136,6 +151,7 @@ class Contact extends Component {
                             name="con_email"
                             type="email"
                             placeholder="Email"
+                            required
                           />
                         </div>
                         <div className="col-12">
@@ -143,6 +159,7 @@ class Contact extends Component {
                             name="con_message"
                             placeholder="Mensaje"
                             defaultValue={""}
+                            required
                           />
                         </div>
                         <div className="col-12">
