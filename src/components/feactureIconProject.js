@@ -37,7 +37,9 @@ const FeatureIconProject = (props) => {
       <div className="feature-section containerIconProyect">
         <div className="containerobjetEcosistemas">
           <div>
-            <h1 className="single-feature-icon__content p-color">
+            <h1
+            style={{ marginTop: "2rem"}}
+            className="single-feature-icon__content p-color">
               Conoce nuestros <br /> proyectos
             </h1>
             <p className="single-feature-icon__content p-color">
