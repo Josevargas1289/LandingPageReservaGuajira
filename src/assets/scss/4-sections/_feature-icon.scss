@@ -48,17 +48,17 @@
 @media (max-width: 768px) {
   .containerobjetEcosistemas {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    
   }
   .containerEcosistema {
     display: flex;
-    justify-content: left;
-    justify-items: left;
-    align-items: left;
-    align-content: left;
-    height: 630px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: lef;
+    height: 600px;
     
   }
   .container-gallery{
@@ -168,16 +168,20 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    align-items: center;
     
   }
   .containerIconProyect {
     display: flex;
-    justify-content: left;
-    justify-items: left;
-    align-items: left;
-    align-content: left;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
     height: 830px;
     
+  }
+  .Text_fectureIcon_center{
+    text-align: center;
   }
 }
 

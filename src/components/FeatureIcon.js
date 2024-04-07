@@ -10,8 +10,8 @@ class FeatureIcon extends Component {
       <div>
         <div className="feature-section containerEcosistema ">
           <div className="containerobjetEcosistemas">
-            <div>
-              <h1 style={{marginTop: "3rem"}} className="single-feature-icon__content p-color">
+            <div className="Text_fectureIcon_center">
+              <h1 style={{marginTop: "2rem"}} className="single-feature-icon__content p-color">
                 Conoce nuestros <br /> ecosistemas
               </h1>
               <p className="single-feature-icon__content p-color">
