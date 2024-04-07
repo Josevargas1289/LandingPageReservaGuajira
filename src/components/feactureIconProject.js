@@ -48,6 +48,7 @@ const FeatureIconProject = (props) => {
               biodiversidad, proteger hábitats <br /> amenazados y sembrar
               esperanza para un futuro <br /> sostenible.
             </p>
+            
           </div>
           <div className="car-ecositemas">
             <div className="iconos-car">
