@@ -26,11 +26,11 @@ class HeroSliderThree extends Component {
       },
       {
         bgImg: slider6,
-        sliderTitle: "Conservando sueños, protegiendo vidas",
+        sliderTitle: "Un legado de biodiversidad",
       },
       {
         bgImg: slider7,
-        sliderTitle: "Conservando sueños, protegiendo vidas",
+        sliderTitle: "Conecta y descubre en la naturaleza",
       },
     ];
 
