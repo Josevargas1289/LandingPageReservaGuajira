@@ -38,7 +38,7 @@ const FeatureIconProject = (props) => {
         <div className="containerobjetEcosistemas">
           <div className="Text_fectureIcon_center">
             <h1
-            style={{ marginTop: "2rem"}}
+            style={{ marginTop: "1rem"}}
             className="single-feature-icon__content p-color">
               Conoce nuestros <br /> proyectos
             </h1>
