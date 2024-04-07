@@ -10,13 +10,13 @@ class FeatureIcon extends Component {
       <div>
         <div className="feature-section containerEcosistema ">
           <div className="containerobjetEcosistemas">
-            <div className="Text_fectureIcon_center">
+            <div className="Text_fectureIcon_center text_fectureIcon_ecosistemas">
               <h1 style={{marginTop: "2rem"}} className="single-feature-icon__content p-color">
-                Conoce nuestros <br /> ecosistemas
+                Conoce nuestros  ecosistemas
               </h1>
               <p className="single-feature-icon__content p-color">
-                Sumérgete en un viaje único donde la <br /> naturaleza y la
-                sostenibilidad se unen <br /> para preservar nuestro entorno
+                Sumérgete en un viaje único donde la naturaleza y la
+                sostenibilidad se unen  para preservar nuestro entorno
               </p>
             </div>
             <div className="car-ecositemas">

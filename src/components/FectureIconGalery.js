@@ -9,14 +9,13 @@ class FeatureIcongalery extends Component {
       <div>
         <div className="feature-section containerEcosistema container-gallery  ">
           <div className="containerobjetEcosistemas">
-            <div>
+            <div className="text_fectureIcon_ecosistemas text_center-galery">
               <h1 className="single-feature-icon__content p-color">
                 Conoce nuestra Galería
               </h1>
               <p className="single-feature-icon__content p-color">
-                Explora la diversidad de flora y fauna, y conoce nuestros <br />
+                Explora la diversidad de flora y fauna, y conoce nuestros
                 esfuerzos en el arboretum y los viveros. ¡Inspírate con la{" "}
-                <br />
                 naturaleza y la preservación ambiental.
               </p>
             </div>

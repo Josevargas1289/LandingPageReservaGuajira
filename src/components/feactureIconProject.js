@@ -36,17 +36,17 @@ const FeatureIconProject = (props) => {
     <div>
       <div className="feature-section containerIconProyect">
         <div className="containerobjetEcosistemas">
-          <div className="Text_fectureIcon_center">
+          <div className="Text_fectureIcon_center text_fectureIcon">
             <h1
             style={{ marginTop: "1rem"}}
             className="single-feature-icon__content p-color">
               Conoce nuestros <br /> proyectos
             </h1>
-            <p className="single-feature-icon__content p-color">
-              Descubre nuestros proyectos de conservación <br /> y siembra.
-              Únete a nosotros mientras trabajamos para <br /> preservar la
-              biodiversidad, proteger hábitats <br /> amenazados y sembrar
-              esperanza para un futuro <br /> sostenible.
+            <p className="single-feature-icon__content p-color ">
+              Descubre nuestros proyectos de conservación  y siembra.
+              Únete a nosotros mientras trabajamos para  preservar la
+              biodiversidad, proteger hábitats  amenazados y sembrar
+              esperanza para un futuro  sostenible.
             </p>
             
           </div>

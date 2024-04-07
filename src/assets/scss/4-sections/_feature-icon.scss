@@ -44,12 +44,21 @@
   gap: 2rem;
   color: white;
 }
+.text_fectureIcon{
+  width: 26rem;
+}
+.text_fectureIcon_ecosistemas{
+  width: 20rem;
+  
+}
 
 @media (max-width: 768px) {
   .containerobjetEcosistemas {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    width: 100%;
+   margin: 1rem;
     
   }
   .containerEcosistema {
@@ -59,11 +68,19 @@
     align-items: center;
     align-content: lef;
     height: 600px;
+    padding: 0rem;
     
   }
   .container-gallery{
     height: 560px;
     
+  }
+  .text_fectureIcon{
+    
+    width: 100%;
+  }
+  .text_center-galery{
+    text-align: center;
   }
 }
 
@@ -178,6 +195,7 @@
     align-items: center;
     align-content: center;
     height: 830px;
+    padding: 0rem;
     
   }
   .Text_fectureIcon_center{
