@@ -11,13 +11,15 @@ class Contact extends Component {
     // Obtener los datos del formulario
     const formData = new FormData(event.target);
     const data = {
-      con_name: formData.get("con_name"),
-      con_email: formData.get("con_email"),
-      con_message: formData.get("con_message"),
+      to_name: "Destinatario", // Nombre del destinatario
+      from_name: formData.get("con_name"),
+      from_email: formData.get("con_email"),
+      message: formData.get("con_message"),
     };
 
     // Enviar el formulario usando emailjs-com
-    emailjs.send("service_id", "template_id", data, "user_id")
+    emailjs
+      .send("service_84oy6fp", "template_yzgj402", data, "HKGEPgH0IjSAAlbzC")
       .then((response) => {
         console.log("Correo enviado con éxito:", response);
         alert("¡Mensaje enviado con éxito!");
@@ -71,7 +73,8 @@ class Contact extends Component {
                   <div className="contact-map">
                     <iframe
                       title="google-map"
-                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2278.3481875697826!2d-76.1357837387079!3d8.692748884838704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDEnMzIuMyJOIDc2wrAwNyc1OS45Ilc!5e0!3m2!1ses-419!2sco!4v1712440864060!5m2!1ses-419!2sco" width="600" 
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2278.3481875697826!2d-76.1357837387079!3d8.692748884838704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDEnMzIuMyJOIDc2wrAwNyc1OS45Ilc!5e0!3m2!1ses-419!2sco!4v1712440864060!5m2!1ses-419!2sco"
+                      width="600"
                       allowFullScreen
                     ></iframe>
                   </div>
