@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ModalVideo from "react-modal-video";
-import ModalB from "./modal/Modal";
 import miniaturaimg from "../assets/img/imgBig/miniatura.jpg";
 
 class AboutText extends Component {
